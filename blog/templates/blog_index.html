@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block page_content_styles%} 
+<link rel="stylesheet" href="{% static 'styles/blog/blog_index.css'%}"> 
+{%endblock%}
+
+{% block page_content %}
+<div class="blogs col-12 col-md-12">
+    <h1>Blog Index</h1>
+    <hr>
+    {% for post in posts %}
+        {%include 'partials/blog_item.html'%}
+    {% endfor %}
+</div>
+{% endblock %}

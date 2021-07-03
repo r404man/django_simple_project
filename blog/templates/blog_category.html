@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-12 col-md-12">
+    <h1>{{ category | title }}</h1>
+    <hr>
+    {% for post in posts %}
+
+    {%include 'partials/blog_item.html'%}
+    {% endfor %}
+</div>
+{% endblock %}

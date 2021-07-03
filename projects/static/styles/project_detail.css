@@ -1,0 +1,23 @@
+.project {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.project-info {
+    width: 50%;
+}
+
+.project-image {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.back-btn {
+    color: #242424;
+}

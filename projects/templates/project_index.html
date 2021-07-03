@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{%load static %}
+
+{% block page_content_styles %} 
+    <link rel="stylesheet" href="{%static 'styles/project_index.css' %}">
+{%endblock%}
+
+{%block page_heading %}
+<h1>
+    Projects
+</h1>
+{% endblock%}
+<div class="row">
+    {% block page_content %}
+    <div class="card-list">
+        {%for project in projects %}
+        {% include "partials/project_item.html" %}
+        {% endfor %}
+    </div>
+    {%endblock%}
+</div>
